@@ -1,4 +1,5 @@
 {
+    "homepage" : "https://quasar3c273.github.io/RickAndMorty",
     "name": "elfsight",
     "version": "0.1.0",
     "private": true,
@@ -19,7 +20,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "format": "npx prettier --write ."
+        "format": "npx prettier --write .",
+        "deploy": "npm run build&&gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -40,6 +42,7 @@
         ]
     },
     "devDependencies": {
+        "gh-pages": "^3.2.3",
         "prop-types": "^15.7.2"
     }
 }
