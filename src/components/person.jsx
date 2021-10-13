@@ -10,6 +10,8 @@ const Person = ({
     status,
     species,
     gender,
+    type,
+    origin,
     location
 }) => {
     const [modalShow, setModalShow] = useState(false);
@@ -50,6 +52,8 @@ const Person = ({
                 status={status}
                 species={species}
                 gender={gender}
+                type={type}
+                origin={origin}
                 location={location}
                 onHide={() => setModalShow(false)}
             />

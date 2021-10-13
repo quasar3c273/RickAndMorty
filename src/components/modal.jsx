@@ -19,12 +19,14 @@ const ModalCharacter = (props) => {
                 <div className="d-flex justify-content-center align-items-center">
                     <img src={props.image} alt={props.name} />
                     <div className="mx-3">
-                        <p>
+                        <h2>
                             <b>{props.name}</b>
-                        </p>
+                        </h2>
+                        <h4>Origin name: {props.origin.name}</h4>
                         <p>Gender: {props.gender}</p>
                         <p>Status: {props.status}</p>
-                        <p>Race: {props.species}</p>
+                        <p>Species: {props.species}</p>
+                        <p>Type: {props.type}</p>
                         <p>Last known location: {props.location.name}</p>
                     </div>
                 </div>
