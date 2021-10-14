@@ -26,7 +26,9 @@ const ModalCharacter = (props) => {
                         <p>Gender: {props.gender}</p>
                         <p>Status: {props.status}</p>
                         <p>Species: {props.species}</p>
-                        <p className={(props.type === "" ? "d-none" : "")}>Type: {props.type}</p>
+                        <p className={props.type === "" ? "d-none" : ""}>
+                            Type: {props.type}
+                        </p>
                         <p>Last known location: {props.location.name}</p>
                     </div>
                 </div>
