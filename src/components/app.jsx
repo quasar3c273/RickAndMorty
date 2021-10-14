@@ -23,6 +23,10 @@ function App() {
         gender: ""
     });
 
+    const handlePageChange = (pageIndex) => {
+        setCurrentPage(pageIndex);
+    };
+
     const onFilterChange = (key, value) => {
         setCurrentPage(1);
         setFilters({ ...filters, [key]: value });
@@ -43,10 +47,6 @@ function App() {
                 setError(error.status);
             });
     }, [filters, currentPage]);
-
-    const handlePageChange = (pageIndex) => {
-        setCurrentPage(pageIndex);
-    };
 
     return (
         <div className="d-flex flex-column min-vh-100">

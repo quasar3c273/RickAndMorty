@@ -12,7 +12,7 @@ const ModalCharacter = (props) => {
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Info about {props.name}
+                    <h2> Info about {props.name}</h2>
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
